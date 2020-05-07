@@ -14,6 +14,10 @@ tablas Futbolista, Club y Usuario.
 |-------|-----------|----------|----------|
 |POST /api/login|Ingresar login y password retorna token Bearer|String login, String password| |
 |GET /api/futbolistas|Lista todos los futbolistas|    |Token |
+|GET /api/clubes|Lista todos los clubes|    |Token |
+|POST /api/futbolistas|Crea un futbolista|Futbolista f|Token |
+|GET /api/futbolistas/idClub|Lista todos los futbolistas de un Club|Integer id (club)|Token |
+|DELETE /api/futbolistas/id|Elimina un futbolista de un club|Integer id(futbolista)|   |
 
 
 
