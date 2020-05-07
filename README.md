@@ -12,6 +12,10 @@ tablas Futbolista, Club y Usuario.
 
 |Llamada|Descripción|Parámetros|Seguridad |
 |-------|-----------|----------|----------|
+|POST /api/login|Ingresar login y password retorna token Bearer|String login, String password| |
+|GET /api/futbolistas|Lista todos los futbolistas|    |Token |
+
+
 
 Entregar el código fuente y el modelo de datos.
 
