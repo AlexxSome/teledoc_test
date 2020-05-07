@@ -9,14 +9,9 @@ R.- @Component Estereotipo genérico para manejar componentes, @Repository ester
 # Pregunta 2
 Construir un CRUD en SPRINGBOOT con Restful API, JPA, Postgresql, JWT para la siguientes
 tablas Futbolista, Club y Usuario.
-Llamada 	Descripción 	Parámetros	 Seguridad
-POST /api/login	Ingresar login y 	String login, 	 
- 	password retorna token Bearer	String password	 
-GET /api/futbolistas	Lista todos los futbolistas		Token
-GET /api/clubes	Lista todos los clubes	 	Token
-POST /api/futbolistas	Crea un futbolista	Futbolista f	Token
-GET /api/futbolistas/idClub	Lista todos los futbolistas de un Club	Integer id (club)	Token
-DELETE /api/futbolistas/id	Elimina un futbolista de un club	Integer id(futbolista)	 
+
+|Llamada|Descripción|Parámetros|Seguridad |
+|-------|-----------|----------|----------|
 
 Entregar el código fuente y el modelo de datos.
 
