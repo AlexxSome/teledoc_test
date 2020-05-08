@@ -23,15 +23,16 @@ tablas Futbolista, Club y Usuario.
 
 Entregar el código fuente y el modelo de datos.
 
-R.- El proyecto  puede ser clonado desde github está en modo publico, desde el siguiente link: https://github.com/AlexxSome/teledoc_test.git
-Modelo de datos en la raíz del git “modeloBD.mwb” y SQL en “modeloBD.sql”, cabe mencionar que la base de datos permite 4 conexiones simultáneas, en caso de necesitar aumentar este valor me pueden contactar.
+R.- 
+- El proyecto  puede ser clonado desde github está en modo publico, desde el siguiente link: https://github.com/AlexxSome/teledoc_test.git
+- Modelo de datos en la raíz del git “modeloBD.mwb” y SQL en “modeloBD.sql”, cabe mencionar que la base de datos permite 4 conexiones simultáneas, en caso de necesitar aumentar este valor me pueden contactar.
 
-Usuario BD: teledoc
-Pass BD: teledocAsoto
-Puerto 5432
-Host: 45.236.128.61
-BD: PostgreSql 9.6
-Library: libpq-10.dll
+- Usuario BD: teledoc
+- Pass BD: teledocAsoto
+- Puerto 5432
+- Host: 45.236.128.61
+- BD: PostgreSql 9.6
+- Library: libpq-10.dll
 
 
 # Pregunta 3
