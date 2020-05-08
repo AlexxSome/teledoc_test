@@ -9,7 +9,23 @@ R.- @Component Estereotipo genérico para manejar componentes, @Repository ester
 # Pregunta 2
 Construir un CRUD en SPRINGBOOT con Restful API, JPA, Postgresql, JWT para la siguientes
 tablas Futbolista, Club y Usuario.
+
+|Llamada|Descripción|Parámetros|Seguridad |
+|-------|-----------|----------|----------|
+|POST /api/login|Ingresar login y password retorna token Bearer|String login, String password| |
+|GET /api/futbolistas|Lista todos los futbolistas|    |Token |
+|GET /api/clubes|Lista todos los clubes|    |Token |
+|POST /api/futbolistas|Crea un futbolista|Futbolista f|Token |
+|GET /api/futbolistas/idClub|Lista todos los futbolistas de un Club|Integer id (club)|Token |
+|DELETE /api/futbolistas/id|Elimina un futbolista de un club|Integer id(futbolista)|   |
+
+
+
+Entregar el código fuente y el modelo de datos.
+
 R.- https://github.com/AlexxSome/teledoc_test.git
+Modelo de datos en la raíz del git “modeloBD.mwb”
+
 
 # Pregunta 3
 En una carrera de 2 tortugas, la tortuga 1 viaja a velocidad constante “V1” y ya ha recorrido una
