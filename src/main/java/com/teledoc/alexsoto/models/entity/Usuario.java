@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "usuario", schema = "public")
+@Table(name = "usuario")
 public class Usuario implements Serializable{
 
 	private static final long serialVersionUID = 3664247984572747765L;
@@ -18,6 +18,8 @@ public class Usuario implements Serializable{
 
 	@Column(name = "password")
     private String password;
+
+	private String token;
     
     public Usuario() {}
     
@@ -27,26 +29,34 @@ public class Usuario implements Serializable{
 		this.password 		= password;
 	}
 
+	public Usuario(Integer idUsuario, String nombreUsuario, String password, String token) {
+		this.idUsuario = idUsuario;
+		this.nombreUsuario = nombreUsuario;
+		this.password = password;
+		this.token = token;
+	}
+
+	public String getToken() {
+		return token;
+	}
+	public void setToken(String token) {
+		this.token = token;
+	}
 	public Integer getIdUsuario() {
 		return idUsuario;
 	}
-
 	public void setIdUsuario(Integer idUsuario) {
 		this.idUsuario = idUsuario;
 	}
-
 	public String getNombreUsuario() {
 		return nombreUsuario;
 	}
-
 	public void setNombreUsuario(String nombreUsuario) {
 		this.nombreUsuario = nombreUsuario;
 	}
-
 	public String getPassword() {
 		return password;
 	}
-
 	public void setPassword(String password) {
 		this.password = password;
 	}
