@@ -17,7 +17,7 @@ tablas Futbolista, Club y Usuario.
 |GET /api/clubes|Lista todos los clubes|    |Token |
 |POST /api/futbolistas|Crea un futbolista|Futbolista f|Token |
 |GET /api/futbolistas/idClub|Lista todos los futbolistas de un Club|Integer id (club)|Token |
-|DELETE /api/futbolistas/id|Elimina un futbolista de un club|Integer id(futbolista)|   |
+|DELETE /api/futbolistas/id|Elimina un futbolista de un club|Integer id(futbolista)|Token   |
 
 
 
