@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface IUsuarioService {
     public List<Usuario> findAll();
+
+    public Usuario findUsuarioByNombreUsaurioAndPassword(String nombreUsuario, String password);
 }

@@ -4,5 +4,5 @@ import com.teledoc.alexsoto.models.entity.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface IUsuarioDao extends JpaRepository<Usuario, Integer> {
-
+    public Usuario findUsuarioByNombreUsuarioAndPassword(String nombreUsuario, String password);
 }

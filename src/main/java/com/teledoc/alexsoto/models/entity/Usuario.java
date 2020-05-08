@@ -21,9 +21,9 @@ public class Usuario implements Serializable{
     
     public Usuario() {}
     
-	public Usuario(Integer idUsuario, String nombreUsaurio, String password) {
+	public Usuario(Integer idUsuario, String nombreUsuario, String password) {
 		this.idUsuario 		= idUsuario;
-		this.nombreUsuario 	= nombreUsaurio;
+		this.nombreUsuario 	= nombreUsuario;
 		this.password 		= password;
 	}
 
@@ -35,12 +35,12 @@ public class Usuario implements Serializable{
 		this.idUsuario = idUsuario;
 	}
 
-	public String getNombreUsaurio() {
+	public String getNombreUsuario() {
 		return nombreUsuario;
 	}
 
-	public void setNombreUsaurio(String nombreUsaurio) {
-		this.nombreUsuario = nombreUsaurio;
+	public void setNombreUsuario(String nombreUsuario) {
+		this.nombreUsuario = nombreUsuario;
 	}
 
 	public String getPassword() {
