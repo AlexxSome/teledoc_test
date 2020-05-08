@@ -1,15 +1,19 @@
 package com.teledoc.alexsoto.models.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Set;
 
 @Entity
 @Table(name = "club")
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Club implements Serializable {
 	private static final long serialVersionUID = -5682439818227906282L;
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer idClub;
 
 	@Column(name = "nombreClub")
@@ -20,6 +24,9 @@ public class Club implements Serializable {
 
 	@Column(name = "liga")
     private String liga;
+
+	@OneToMany(mappedBy = "club", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	private Set<Futbolista> futbolistaList;
 
     public Club() {}
 
@@ -54,6 +61,12 @@ public class Club implements Serializable {
     public void setLiga(String liga) {
         this.liga = liga;
     }
+	public Set<Futbolista> getFutbolistaList() {
+		return futbolistaList;
+	}
+	public void setFutbolistaList(Set<Futbolista> futbolistaList) {
+		this.futbolistaList = futbolistaList;
+	}
 
 	@Override
 	public int hashCode() {

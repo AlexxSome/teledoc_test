@@ -1,8 +1,8 @@
 package com.teledoc.alexsoto.models.dao;
 
 import com.teledoc.alexsoto.models.entity.Club;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface IClubDao extends CrudRepository<Club, Integer> {
+public interface IClubDao extends JpaRepository<Club, Integer> {
 
 }
